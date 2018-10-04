@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+
+javadoc -charset utf8 -cp "projetpoo/scheduleio.jar" projetpoo/*.java -d Javadoc
+
+
+
+javac -cp "projetpoo/scheduleio.jar:." projetpoo/*.java
+
+
+
+java -cp "projetpoo/scheduleio.jar:." projetpoo.main __activity__.txt __precedentConstraint__.txt __meetConstraint__.txt __maxSpanConstraint__.txt

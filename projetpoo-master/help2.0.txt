@@ -1,0 +1,5 @@
+chmod +x help.txt
+
+
+
+./help.txt ou sh -e help.txt
